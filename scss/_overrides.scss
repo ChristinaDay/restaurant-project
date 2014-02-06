@@ -21,9 +21,21 @@ body {
   background-color: green;
 }*/
 
+// .article {
+//   z-index: 1;
+//   position: relative;
+//   margin: 0 auto;
+//   width: 64rem;
+//   height: 100%;
+// }
+.outer-div {
+  padding: 30px;
+}
 .logo {
-  width: 138px;
-  height: 56px;
+
+  margin: auto;
+  width: 100px;
+  height: 100px;
   background: url('..img/logo.png');
 }
 
