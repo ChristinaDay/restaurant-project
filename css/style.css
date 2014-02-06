@@ -1,11 +1,18 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "minion-pro", sans-serif;
+  height: 100%;
 }
 
 
-.header {
-  background-image: url('../img/intro.jpg');
+.full-width-background {
+  background: url('../img/intro.jpg') no-repeat;
   background-size: cover;
+  height: 100%;
+  min-height: 680px;
 }
 
 /*header  {
@@ -15,9 +22,16 @@ body {
 .logo {
   width: 138px;
   height: 56px;
-  background-image: url('..img/logo.png');
+  background: url('..img/logo.png');
 }
 
+#top-bar {
+  background: rgba(248, 245, 245, 0.47);
+}
+
+#top-bar-item {
+  background: rgba(248, 245, 245, 0.47);
+}
 /*#wrapper {
   overflow: hidden;
   overflow-y: scroll;
