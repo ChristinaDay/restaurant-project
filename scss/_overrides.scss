@@ -1,12 +1,18 @@
-$top-bar-color: rgba(255, 255, 255, 0.59);
+// $background-color: #0F201E;
+// $text-color: #04ABCA;
+// $body-font: "ff-enzo-web",sans-serif;
+@import "settings";
+$nav-bg: rgba(15, 32, 30, 0.6);
+$border-accent: 10px solid rgba(250, 97, 84, 0.77);
 
-html {
+html, body {
   height: 100%;
+  min-height: 100%;
+  // background: $background-color;
 }
 
 body {
-  font-family: "minion-pro", sans-serif;
-  height: 100%;
+  // font-family: $body-font;
 }
 
 
@@ -17,24 +23,25 @@ body {
   min-height: 680px;
 }
 
+.fullscreen-img {
+  display:block;
+  z-index:1;
+  min-width:100%;
+  min-height:100%;
+  background:transparent url('../img/red-flower.jpg') center center no-repeat;
+  background-size: cover;
+  border-bottom: 56px solid $nav-bg; 
+}
+
 .content-area {
-  margin-top: 55px;
+  padding: 3%;
+  border-top: $border-accent;
 }
 
-/*header  {
-  background-color: green;
-}*/
-
-// .article {
-//   z-index: 1;
-//   position: relative;
-//   margin: 0 auto;
-//   width: 64rem;
-//   height: 100%;
-// }
-.outer-div {
-  padding: 30px;
+.logo-wrapper {
+  padding: 5%;
 }
+
 .logo {
 
   margin: auto;
@@ -42,48 +49,51 @@ body {
   height: 400px;
   background: url('../img/logo.png');
   background-size: 400px 400px;
-  margin: auto;
-  border: 1px dashed white;
+  border: 2px solid white;
 }
 
-/** Changes background color, height and margin of the border **/
-nav.top-bar {
-  background: $top-bar-color;
+.hours-location {
+  text-align: center;
+  color: $body-font-color;
+}
 
-//     background: rgba(255, 255, 255, 0.36);
-//     overflow: visible;
-//     border-top: 2px solid #ffffff;
-//     border-bottom: 2px solid #ffffff;
+.hours-location p {
+  font-size: 1.6em;
+}
+/** Changes background color, height and margin of the border **/
+
+.main-nav {
+  background: $nav-bg;
+  border-bottom: $border-accent;
+}
+
+nav {
+  padding-top: 1%;
  }
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-bottom: 1%;
+  // padding-left: 2%;
+} 
+
+nav ul li a {
+  color: $body-font-color;
+  font-size: 1.3em;
+
+}
+
+
  
 /** Removes black background on menu bar **/
-.top-bar-section ul {
-    background: rgba(51, 51, 51, 0);
-    text-transform: uppercase;
 
-}
-
-.left {
-  background: rgba(51, 51, 51, 0);
-}
  
 /** Removes black background on menu item **/
-.top-bar-section li a:not(.button) {
-    background: none;
-    line-height: 58px;
-    padding: 0 27px;
-}
-/*#wrapper {
-  overflow: hidden;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}*/
 
-/*#home {
-  background-image: url(../img/intro.jpg);
-}*/
 
 
 
