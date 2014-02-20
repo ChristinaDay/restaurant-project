@@ -31,7 +31,7 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
- $row-width: rem-calc(1000);
+ $row-width: rem-calc(2000);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -113,10 +113,10 @@ $body-font-family: "ff-enzo-web",sans-serif;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family:'Architects Daughter', cursive;
 // $header-font-weight: 300;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #f5e8a6;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

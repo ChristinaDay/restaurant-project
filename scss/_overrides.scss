@@ -12,7 +12,8 @@ html, body {
 }
 
 body {
-  // font-family: $body-font;
+  //font-family: $body-font;
+
 }
 
 
@@ -29,8 +30,8 @@ body {
   min-width:100%;
   min-height:100%;
   background:transparent url('../img/red-flower.jpg') center center no-repeat;
-  background-size: cover;
-  border-bottom: 56px solid $nav-bg; 
+  // background-size: cover;
+  border-bottom: 56px solid $nav-bg;
 }
 
 .content-area {
@@ -38,18 +39,18 @@ body {
   border-top: $border-accent;
 }
 
-.logo-wrapper {
-  padding: 5%;
-}
 
-.logo {
+.logo h1 {
 
   margin: auto;
   width: 419px;
   height: 400px;
-  background: url('../img/logo.png');
-  background-size: 400px 400px;
-  border: 2px solid white;
+  // background: url('../img/logo.png');
+  // background-size: 400px 400px;
+  text-align: center;
+  //border: 2px solid white;
+  color: white;
+  font-size: 7em;
 }
 
 .hours-location {
@@ -58,7 +59,7 @@ body {
 }
 
 .hours-location p {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 /** Changes background color, height and margin of the border **/
 
@@ -79,7 +80,7 @@ nav ul li {
   display: inline-block;
   padding-bottom: 1%;
   // padding-left: 2%;
-} 
+}
 
 nav ul li a {
   color: $body-font-color;
@@ -88,10 +89,10 @@ nav ul li a {
 }
 
 
- 
+
 /** Removes black background on menu bar **/
 
- 
+
 /** Removes black background on menu item **/
 
 
